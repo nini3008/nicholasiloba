@@ -1,18 +1,19 @@
 import React from "react"
 import { Link } from "gatsby"
+import style from "./navigation.module.scss"
 
 const Navigation = () => {
   return (
-    <React.Fragment>
-      <div>
+    <div className={style.navigation}>
+      <div className={style.logo}>
         <Link to="/">nickiloba</Link>
       </div>
-      <div>
-        <Link to="">Work</Link>
+      <nav>
+        <Link to="/">Work</Link>
         <Link to="/resume">Resume</Link>
-        <Link to="">Contact</Link>
-      </div>
-    </React.Fragment>
+        <Link to="/">Contact</Link>
+      </nav>
+    </div>
   )
 }
 

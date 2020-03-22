@@ -1,11 +1,11 @@
 import React from "react"
-import Navigation from "../components/navigation.js"
+import Layout from "../components/layout"
 
 const Resume = () => {
   return (
-    <div>
-      <Navigation />
-    </div>
+    <Layout>
+      <h2>resume</h2>
+    </Layout>
   )
 }
 
