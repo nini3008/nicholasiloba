@@ -1,6 +1,6 @@
 import React from "react"
 
-const Work = () => {
+const WorkPage = () => {
   return (
     <section>
       <h2>This is the work section</h2>
@@ -8,4 +8,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default WorkPage

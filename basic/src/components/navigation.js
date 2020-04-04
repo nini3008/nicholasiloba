@@ -9,9 +9,9 @@ const Navigation = () => {
         <Link to="/">nickiloba</Link>
       </div>
       <nav>
-        <Link to="/">Work</Link>
+        <Link to="/work">Work</Link>
         <Link to="/resume">Resume</Link>
-        <Link to="/">Contact</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
     </div>
   )
