@@ -1,10 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
+import ResumePage from "../components/resumePage"
 
 const Resume = () => {
   return (
     <Layout>
-      <h2>resume</h2>
+      <ResumePage />
     </Layout>
   )
 }

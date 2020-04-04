@@ -1,20 +1,19 @@
 import React, { Component } from "react"
 import Layout from "../components/layout"
-import Welcome from "../components/welcome"
+import ContactPage from "../components/contactPage"
 
-class Index extends Component {
+class Contact extends Component {
   constructor(props) {
     super(props)
     this.state = {}
   }
-
   render() {
     return (
       <Layout>
-        <Welcome />
+        <ContactPage />
       </Layout>
     )
   }
 }
 
-export default Index
+export default Contact
