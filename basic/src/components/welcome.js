@@ -4,11 +4,11 @@ import style from "./welcome.module.scss"
 
 const Welcome = () => {
   return (
-    <section>
+    <section className={style.home_section}>
       <StaticQuery
         query={graphql`
           query {
-            allDataJson {
+            allDataJson(filter: { title: { eq: "Home Page" } }) {
               edges {
                 node {
                   description {
@@ -33,7 +33,7 @@ const Welcome = () => {
                 <div className={style.leftSide}></div>
                 <div className={style.rightSide}>
                   <h1>{data.node.description[0].welcometext}</h1>
-                  <p>{data.node.description[0].midText}</p>
+                  <h1>{data.node.description[0].midText}</h1>
                   <p>{data.node.description[0].lowText}</p>
                   <Link to="/contact">{data.node.description[0].contact}</Link>
                 </div>
