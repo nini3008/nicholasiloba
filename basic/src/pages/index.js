@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Layout from "../components/layout"
+
 import Welcome from "../components/welcome"
 
 class Index extends Component {
