@@ -1,9 +1,14 @@
 .container {
+  border: 1rem solid #000;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
   section {
     height: 100vh;
     vertical-align: middle;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    //padding: 0 1rem;
   }
 }
