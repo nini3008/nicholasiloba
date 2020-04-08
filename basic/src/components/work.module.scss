@@ -1,0 +1,53 @@
+.work_section {
+  height: 100vh;
+  vertical-align: middle;
+  display: flex;
+  padding-top: 150px;
+  flex-direction: column;
+}
+
+.projectWrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.projectBucket {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  &:before {
+    content: "";
+    background: orange;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  h3,
+  p,
+  button {
+    z-index: 1;
+  }
+  button {
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  &:hover {
+    &:before {
+      visibility: visible;
+    }
+  }
+}
+
+.openDetails {
+  position: absolute;
+}

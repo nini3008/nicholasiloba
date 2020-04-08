@@ -1,0 +1,94 @@
+{
+  "title": "Work Page",
+  "WelcomeText": "Latest Projects",
+  "content": [
+    {
+      "projectName": "MyFuture",
+      "projectImage": "/",
+      "projectPopButton": "view more",
+      "ProjectDetails": "contact me",
+      "openDetails": [
+        {
+          "name": "MyFuture"
+        }
+      ]
+    },
+    {
+      "projectName": "Today's Military",
+      "projectImage": "/",
+      "projectPopButton": "view more",
+      "ProjectDetails": "contact me",
+      "openDetails": [
+        {
+          "name": "MyFuture"
+        }
+      ]
+    },
+    {
+      "projectName": "Medicine + Military",
+      "projectImage": "/",
+      "projectPopButton": "view more",
+      "ProjectDetails": "contact me",
+      "openDetails": [
+        {
+          "name": "MyFuture"
+        }
+      ]
+    },
+    {
+      "projectName": "Angry whooper",
+      "projectImage": "/",
+      "projectPopButton": "view more",
+      "ProjectDetails": "contact me",
+      "openDetails": [
+        {
+          "name": "MyFuture"
+        }
+      ]
+    },
+    {
+      "projectName": "Museum of Incomplete",
+      "projectImage": "/",
+      "projectPopButton": "view more",
+      "ProjectDetails": "contact me",
+      "openDetails": [
+        {
+          "name": "MyFuture"
+        }
+      ]
+    },
+    {
+      "projectName": "Mullenlowe US",
+      "projectImage": "/",
+      "projectPopButton": "view more",
+      "ProjectDetails": "contact me",
+      "openDetails": [
+        {
+          "name": "MyFuture"
+        }
+      ]
+    },
+    {
+      "projectName": "CSS Grid",
+      "projectImage": "/",
+      "projectPopButton": "view more",
+      "ProjectDetails": "contact me",
+      "openDetails": [
+        {
+          "name": "MyFuture"
+        }
+      ]
+    },
+    {
+      "projectName": "Movie Wars",
+      "projectImage": "/",
+      "projectPopButton": "view more",
+      "ProjectDetails": "contact me",
+      "openDetails": [
+        {
+          "name": "MyFuture"
+        }
+      ]
+    }
+  ]
+}
