@@ -13,8 +13,20 @@
   flex-wrap: wrap;
 }
 
-.projectBucket {
+.project {
   width: 25%;
+  height: 100%;
+}
+
+.project.active {
+  .viewDetails {
+    visibility: visible;
+    height: 100%;
+  }
+}
+
+.projectBucket {
+  width: 100%;
   height: 100%;
   text-align: center;
   justify-content: center;
@@ -48,6 +60,7 @@
   }
 }
 
-.openDetails {
-  position: absolute;
+.viewDetails {
+  visibility: hidden;
+  height: 0;
 }

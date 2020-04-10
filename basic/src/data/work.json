@@ -3,6 +3,7 @@
   "WelcomeText": "Latest Projects",
   "content": [
     {
+      "id": "0",
       "projectName": "MyFuture",
       "projectImage": "/",
       "projectPopButton": "view more",
@@ -14,6 +15,7 @@
       ]
     },
     {
+      "id": "1",
       "projectName": "Today's Military",
       "projectImage": "/",
       "projectPopButton": "view more",
@@ -25,6 +27,7 @@
       ]
     },
     {
+      "id": "2",
       "projectName": "Medicine + Military",
       "projectImage": "/",
       "projectPopButton": "view more",
@@ -36,6 +39,7 @@
       ]
     },
     {
+      "id": "3",
       "projectName": "Angry whooper",
       "projectImage": "/",
       "projectPopButton": "view more",
@@ -47,6 +51,7 @@
       ]
     },
     {
+      "id": "4",
       "projectName": "Museum of Incomplete",
       "projectImage": "/",
       "projectPopButton": "view more",
@@ -58,6 +63,7 @@
       ]
     },
     {
+      "id": "5",
       "projectName": "Mullenlowe US",
       "projectImage": "/",
       "projectPopButton": "view more",
@@ -69,6 +75,7 @@
       ]
     },
     {
+      "id": "6",
       "projectName": "CSS Grid",
       "projectImage": "/",
       "projectPopButton": "view more",
@@ -80,6 +87,7 @@
       ]
     },
     {
+      "id": "7",
       "projectName": "Movie Wars",
       "projectImage": "/",
       "projectPopButton": "view more",
