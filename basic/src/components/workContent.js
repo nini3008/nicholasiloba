@@ -1,14 +1,15 @@
-import React, { useState } from "react"
+import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import style from "./work.module.scss"
 import { v4 as uuidv4 } from "uuid"
 import ProjectDetails from "./viewProjectDetails"
 
 const WorkPage = props => {
-  const [isToggled, setToggled] = useState(false)
-
-  const handleBucket = event => {
-    setToggled(!isToggled)
+  const handleBucket = (event, id, index) => {
+    let num = parseFloat(id)
+    if (num === index) {
+      event.target.parentNode.parentNode.classList.toggle(style["active"])
+    }
   }
 
   return (
@@ -38,50 +39,46 @@ const WorkPage = props => {
         render={data => (
           <>
             {data.allDataJson.edges.map((data, id) => (
-              <div key={1}>
-                <div className={style.projectWrapper}>
-                  {data.node.content.map((data, index) => {
-                    let id_Num = parseFloat(index)
-                    let data_id_Num = parseFloat(data.id)
-                    return (
-                      <React.Fragment key={uuidv4()}>
-                        <div
-                          key={data_id_Num}
-                          data-id={data_id_Num}
-                          className={style.project}
-                        >
-                          <div className={style.projectBucket}>
-                            <h3>{data.projectName}</h3>
-                            <p>{data.ProjectDetails}</p>
+              <div key={1} className={style.projectWrapper}>
+                {data.node.content.map((data, index) => {
+                  let id_Num = parseFloat(index)
+                  let data_id_Num = parseFloat(data.id)
+                  return (
+                    <React.Fragment key={uuidv4()}>
+                      <div
+                        key={data_id_Num}
+                        data-id={data_id_Num}
+                        className={style.project}
+                      >
+                        <div className={style.projectBucket}>
+                          <h3>{data.projectName}</h3>
+                          <p>{data.ProjectDetails}</p>
 
-                            <button
-                              onClick={event => {
-                                let num = parseFloat(event.target.dataset.id)
-                                if (num === id_Num) {
-                                  console.log("here")
-
-                                  event.target.parentNode.parentNode.classList.toggle(
-                                    style["active"]
-                                  )
-                                }
-                              }}
-                              onKeyDown={handleBucket}
-                              tabIndex="-1"
-                              data-id={data_id_Num}
-                            >
-                              {data.projectPopButton}
-                            </button>
-                          </div>
-
-                          <ProjectDetails
-                            index={data_id_Num}
-                            openDetails={data.openDetails}
-                          />
+                          <button
+                            onClick={event => {
+                              handleBucket(
+                                event,
+                                event.target.dataset.id,
+                                id_Num
+                              )
+                            }}
+                            onKeyDown={handleBucket}
+                            tabIndex="-1"
+                            data-id={data_id_Num}
+                          >
+                            {data.projectPopButton}
+                          </button>
                         </div>
-                      </React.Fragment>
-                    )
-                  })}
-                </div>
+
+                        <ProjectDetails
+                          index={data_id_Num}
+                          openDetails={data.openDetails}
+                          projectId={id_Num}
+                        />
+                      </div>
+                    </React.Fragment>
+                  )
+                })}
               </div>
             ))}
           </>
