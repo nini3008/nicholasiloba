@@ -1,9 +1,7 @@
 .work_section {
-  height: 100vh;
-  vertical-align: middle;
-  display: flex;
-  padding-top: 150px;
-  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .projectWrapper {
@@ -15,13 +13,35 @@
 
 .project {
   width: 25%;
-  height: 100%;
+  height: auto;
+  .viewDetails {
+    visibility: hidden;
+  }
+  span {
+    visibility: hidden;
+  }
 }
 
 .project.active {
   .viewDetails {
     visibility: visible;
-    height: 100%;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: green;
+    z-index: 9;
+  }
+  span {
+    visibility: visible;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    margin-top: 150px;
+    z-index: 10;
+    cursor: pointer;
   }
 }
 
@@ -51,6 +71,7 @@
   button {
     margin: 0 auto;
     width: 200px;
+    cursor: pointer;
   }
 
   &:hover {
@@ -58,9 +79,4 @@
       visibility: visible;
     }
   }
-}
-
-.viewDetails {
-  visibility: hidden;
-  height: 0;
 }
