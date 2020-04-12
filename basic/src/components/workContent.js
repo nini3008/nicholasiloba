@@ -3,6 +3,16 @@ import { StaticQuery, graphql } from "gatsby"
 import style from "./work.module.scss"
 import { v4 as uuidv4 } from "uuid"
 import ProjectDetails from "./viewProjectDetails"
+import workImages from "../data/work.json"
+
+const handleBackground = index => {
+  workImages.content.forEach((img, id) => {
+    if (index === id) {
+      console.log(index, id)
+      console.log(img.ProjectIMG[0].img)
+    }
+  })
+}
 
 const WorkPage = props => {
   const handleBucket = (event, id, index) => {
@@ -52,12 +62,8 @@ const WorkPage = props => {
                         data-id={data_id_Num}
                         className={style.project}
                       >
-                        <div
-                          className={style.projectBucket}
-                          style={{
-                            backgroundImage: `url(${data.ProjectIMG[0].img})`,
-                          }}
-                        >
+                        <div className={style.projectBucket}>
+                          {handleBackground(index)}
                           <h3>{data.projectName}</h3>
                           <button
                             onClick={event => {
