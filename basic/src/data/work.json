@@ -7,7 +7,7 @@
       "projectName": "MyFuture",
       "ProjectIMG": [
         {
-          "img": "//via.placeholder.com/120x90?text=120x90+Button%20C/O%20https://placeholder.com/banner-ads/"
+          "img": "../images/myFuture.png"
         }
       ],
       "projectPopButton": "view more",
@@ -23,7 +23,7 @@
       "projectName": "Today's Military",
       "ProjectIMG": [
         {
-          "img": "images/todaysmilitary.png"
+          "img": "../images/todaysmilitary.png"
         }
       ],
       "projectPopButton": "view more",
