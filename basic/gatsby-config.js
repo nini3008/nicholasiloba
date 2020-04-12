@@ -6,7 +6,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-transformer-json`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -19,7 +18,7 @@ module.exports = {
       options: {
         useResolveUrlLoader: {
           options: {
-            sourceMap: false, //default is false
+            sourceMap: false,
           },
         },
       },
@@ -37,5 +36,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
 }
