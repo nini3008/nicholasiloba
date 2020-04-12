@@ -3,7 +3,6 @@ import style from "./work.module.scss"
 import { v4 as uuidv4 } from "uuid"
 
 const handleClose = e => {
-  console.log(e.target.parentNode)
   e.target.parentNode.classList.remove(style["active"])
 }
 

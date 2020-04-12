@@ -24,9 +24,11 @@ const WorkPage = props => {
                   content {
                     id
                     ProjectDetails
-                    projectImage
                     projectName
                     projectPopButton
+                    ProjectIMG {
+                      img
+                    }
                     openDetails {
                       name
                     }
@@ -50,10 +52,13 @@ const WorkPage = props => {
                         data-id={data_id_Num}
                         className={style.project}
                       >
-                        <div className={style.projectBucket}>
+                        <div
+                          className={style.projectBucket}
+                          style={{
+                            backgroundImage: `url(${data.ProjectIMG[0].img})`,
+                          }}
+                        >
                           <h3>{data.projectName}</h3>
-                          <p>{data.ProjectDetails}</p>
-
                           <button
                             onClick={event => {
                               handleBucket(

@@ -5,7 +5,11 @@
     {
       "id": "0",
       "projectName": "MyFuture",
-      "projectImage": "/",
+      "ProjectIMG": [
+        {
+          "img": "//via.placeholder.com/120x90?text=120x90+Button%20C/O%20https://placeholder.com/banner-ads/"
+        }
+      ],
       "projectPopButton": "view more",
       "ProjectDetails": "contact me",
       "openDetails": [
@@ -17,84 +21,112 @@
     {
       "id": "1",
       "projectName": "Today's Military",
-      "projectImage": "/",
+      "ProjectIMG": [
+        {
+          "img": "images/todaysmilitary.png"
+        }
+      ],
       "projectPopButton": "view more",
       "ProjectDetails": "contact me",
       "openDetails": [
         {
-          "name": "MyFuture"
+          "name": "Today's Military"
         }
       ]
     },
     {
       "id": "2",
       "projectName": "Medicine + Military",
-      "projectImage": "/",
+      "ProjectIMG": [
+        {
+          "img": "../images/med-military.png"
+        }
+      ],
       "projectPopButton": "view more",
       "ProjectDetails": "contact me",
       "openDetails": [
         {
-          "name": "MyFuture"
+          "name": "Medicine + Military"
         }
       ]
     },
     {
       "id": "3",
       "projectName": "Angry whooper",
-      "projectImage": "/",
+      "ProjectIMG": [
+        {
+          "img": "/"
+        }
+      ],
       "projectPopButton": "view more",
       "ProjectDetails": "contact me",
       "openDetails": [
         {
-          "name": "MyFuture"
+          "name": "Angry whooper"
         }
       ]
     },
     {
       "id": "4",
       "projectName": "Museum of Incomplete",
-      "projectImage": "/",
+      "ProjectIMG": [
+        {
+          "img": "../images/moi.png"
+        }
+      ],
       "projectPopButton": "view more",
       "ProjectDetails": "contact me",
       "openDetails": [
         {
-          "name": "MyFuture"
+          "name": "Museum of Incomplete"
         }
       ]
     },
     {
       "id": "5",
       "projectName": "Mullenlowe US",
-      "projectImage": "/",
+      "ProjectIMG": [
+        {
+          "img": "../images/mullenlowe.png"
+        }
+      ],
       "projectPopButton": "view more",
       "ProjectDetails": "contact me",
       "openDetails": [
         {
-          "name": "MyFuture"
+          "name": "Mullenlowe US"
         }
       ]
     },
     {
       "id": "6",
       "projectName": "CSS Grid",
-      "projectImage": "/",
+      "ProjectIMG": [
+        {
+          "img": "/"
+        }
+      ],
       "projectPopButton": "view more",
       "ProjectDetails": "contact me",
       "openDetails": [
         {
-          "name": "MyFuture"
+          "name": "CSS Grid"
         }
       ]
     },
     {
       "id": "7",
       "projectName": "Movie Wars",
-      "projectImage": "/",
+      "ProjectIMG": [
+        {
+          "img": "/"
+        }
+      ],
       "projectPopButton": "view more",
       "ProjectDetails": "contact me",
       "openDetails": [
         {
-          "name": "MyFuture"
+          "name": "Movie Wars"
         }
       ]
     }
