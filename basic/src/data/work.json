@@ -55,7 +55,7 @@
       "projectName": "Angry whooper",
       "ProjectIMG": [
         {
-          "img": "/"
+          "img": "../images/todaysmilitary.png"
         }
       ],
       "projectPopButton": "view more",
@@ -103,7 +103,7 @@
       "projectName": "CSS Grid",
       "ProjectIMG": [
         {
-          "img": "/"
+          "img": "../images/todaysmilitary.png"
         }
       ],
       "projectPopButton": "view more",
@@ -119,7 +119,7 @@
       "projectName": "Movie Wars",
       "ProjectIMG": [
         {
-          "img": "/"
+          "img": "../images/todaysmilitary.png"
         }
       ],
       "projectPopButton": "view more",
