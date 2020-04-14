@@ -25,11 +25,7 @@ const Welcome = () => {
         render={data => (
           <>
             {data.allDataJson.edges.map((data, id) => (
-              <div
-                key={1}
-                className={style.home_page}
-                style={{ background: "#383838" }}
-              >
+              <div key={1} className={style.home_page}>
                 <div className={style.leftSide}></div>
                 <div className={style.rightSide}>
                   <h1>{data.node.description[0].welcometext}</h1>
