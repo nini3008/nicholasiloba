@@ -3,16 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import style from "./work.module.scss"
 import { v4 as uuidv4 } from "uuid"
 import ProjectDetails from "./viewProjectDetails"
-import workImages from "../data/work.json"
-
-const handleBackground = index => {
-  workImages.content.forEach((img, id) => {
-    if (index === id) {
-      console.log(index, id)
-      console.log(img.ProjectIMG[0].img)
-    }
-  })
-}
+import Img from "gatsby-image"
 
 const WorkPage = props => {
   const handleBucket = (event, id, index) => {
@@ -37,7 +28,13 @@ const WorkPage = props => {
                     projectName
                     projectPopButton
                     ProjectIMG {
-                      img
+                      img {
+                        childImageSharp {
+                          fluid(maxWidth: 1000, quality: 100) {
+                            ...GatsbyImageSharpFluid
+                          }
+                        }
+                      }
                     }
                     openDetails {
                       name
@@ -55,6 +52,7 @@ const WorkPage = props => {
                 {data.node.content.map((data, index) => {
                   let id_Num = parseFloat(index)
                   let data_id_Num = parseFloat(data.id)
+
                   return (
                     <React.Fragment key={uuidv4()}>
                       <div
@@ -63,7 +61,11 @@ const WorkPage = props => {
                         className={style.project}
                       >
                         <div className={style.projectBucket}>
-                          {handleBackground(index)}
+                          <Img
+                            fluid={data.ProjectIMG[0].img.childImageSharp.fluid}
+                            className="customImg"
+                            alt="work profile images"
+                          />
                           <h3>{data.projectName}</h3>
                           <button
                             onClick={event => {
