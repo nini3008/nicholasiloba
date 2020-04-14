@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import Layout from "../components/layout"
-import ContactPage from "../components/contactPage"
+import ContactPage from "../components/contact"
 
 class Contact extends Component {
   constructor(props) {

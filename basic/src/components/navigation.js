@@ -6,7 +6,9 @@ const Navigation = () => {
   return (
     <div className={style.navigation}>
       <div className={style.logo}>
-        <Link to="/">N</Link>
+        <h2>
+          <Link to="/">N</Link>
+        </h2>
       </div>
       <nav>
         <ul className={style.links}>

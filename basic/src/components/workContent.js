@@ -47,6 +47,7 @@ const WorkPage = props => {
         `}
         render={data => (
           <>
+            <h2 className={style.header_text}>Recent Projects</h2>
             {data.allDataJson.edges.map((data, id) => (
               <div key={1} className={style.projectWrapper}>
                 {data.node.content.map((data, index) => {
@@ -63,7 +64,7 @@ const WorkPage = props => {
                         <div className={style.projectBucket}>
                           <Img
                             fluid={data.ProjectIMG[0].img.childImageSharp.fluid}
-                            className="customImg"
+                            className={style.customImg}
                             alt="work profile images"
                           />
                           <h3>{data.projectName}</h3>
