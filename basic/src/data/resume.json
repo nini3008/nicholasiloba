@@ -1,0 +1,47 @@
+{
+  "title": "Resume Page",
+  "description": [
+    {
+      "name": "Nicholas Iloba",
+      "jobTitle": "Front End Developer",
+      "objective": "This is where i will be writing my resume objective"
+    }
+  ],
+  "Experience": [
+    {
+      "jobTitle": "Web Developer",
+      "year": "Dec, 2017 - Present",
+      "duties": ["Build site one", "Built site two"]
+    },
+    {
+      "jobTitle": "UI Developer",
+      "year": "Sep, 2017 - Dec, 2017",
+      "duties": ["Build site three", "Built site four"]
+    },
+    {
+      "jobTitle": "Web Developer",
+      "year": "Apr, 2015 - Jul, 2017",
+      "duties": ["Build site five", "Built site six"]
+    }
+  ],
+  "Education": [
+    {
+      "school": "University of Portsmouth, UK",
+      "year": "2013",
+      "degree": "Msc. Business & Management "
+    },
+    {
+      "school": "University of Portsmouth, UK",
+      "year": "2009",
+      "degree": "Bsc. Computing "
+    }
+  ],
+  "Personal": [
+    {
+      "Address": "28 iriving street, Cambridge, MA, 02138",
+      "phone": "202-251-7566",
+      "email": "nicholas.iloba@gmail.com"
+    }
+  ],
+  "skills": ["HTML", "JavaScript", "CSS", "React", "Gatsby", "Github"]
+}
