@@ -1,10 +1,10 @@
 import React from "react"
 import Navigation from "./navigation.js"
 import Footer from "./footer.js"
-import style from "./layout.module.scss"
+import "../styles/global.scss"
 
 export default ({ children }) => (
-  <div className={style.container}>
+  <div className="container">
     <Navigation />
     {children}
     <Footer />

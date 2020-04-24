@@ -1,8 +1,36 @@
 .resume_section {
-  background: #6d214f;
   height: 100vh;
   vertical-align: middle;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.resume_wrapper {
+  background: white;
+  height: calc(100% - 200px);
+  width: calc(100% - 50px);
+  margin: 0 auto;
+  display: flex;
+}
+
+.experience_list {
+  display: flex;
+  width: 100%;
+}
+
+.leftSide_resume {
+  width: 75%;
+  padding: 1rem;
+}
+.rightSide_resume {
+  width: 25%;
+  background-color: #d8d8d8;
+  padding: 1rem;
+}
+
+.experienceWrapper {
+}
+
+.list_detail {
 }
