@@ -20,11 +20,14 @@ const ResumePage = () => {
                   Address
                   email
                   phone
+                  linkedin
                 }
                 Experience {
                   duties
                   jobTitle
                   year
+                  company
+                  city
                 }
                 Education {
                   degree
@@ -40,42 +43,33 @@ const ResumePage = () => {
         <>
           {data.allDataJson.edges.map((data, id) => (
             <div key={1} className={style.resume_section}>
+              <div className={style.name_wrapper}>
+                <span>{data.node.description[0].name}</span>
+                <span>{data.node.description[0].jobTitle}</span>
+              </div>
+              <div className={style.objective}>
+                <p>{data.node.description[0].objective}</p>
+              </div>
               <div className={style.resume_wrapper}>
                 <div className={style.leftSide_resume}>
-                  <h1>{data.node.description[0].name}</h1>
-                  <h4>{data.node.description[0].jobTitle}</h4>
-                  <div className={style.objective}>
-                    <h2>Objective</h2>
-                    <p>{data.node.description[0].objective}</p>
-                  </div>
-
                   <div className={style.experienceWrapper}>
-                    <h2>Experience</h2>
                     {data.node.Experience.map((data, id) => {
                       return (
                         <div className={style.experience_list} key={id}>
-                          <span className={style.list_year}>{data.year}</span>
                           <div className={style.list_detail}>
-                            <h4>{data.jobTitle}</h4>
-                            <ul>
-                              {data.duties.map((duty, id) => {
-                                return <li key={id}>{duty}</li>
-                              })}
-                            </ul>
-                          </div>
-                        </div>
-                      )
-                    })}
-                  </div>
-                  <div className={style.educationWrapper}>
-                    <h2>Education</h2>
-                    {data.node.Education.map((data, id) => {
-                      return (
-                        <div className={style.education_list} key={id}>
-                          <span className={style.list_year}>{data.year}</span>
-                          <div className={style.list_detail}>
-                            <h4>{data.school}</h4>
-                            <p>{data.degree}</p>
+                            <div className={style.top_details}>
+                              <div className={style.list_company_name}>
+                                <h4>{data.company}</h4>
+                                <p>{data.jobTitle}</p>
+                              </div>
+                              <div className={style.list_city_name}>
+                                <p className={style.list_city}>{data.city}</p>
+                                <p className={style.list_year}>{data.year}</p>
+                              </div>
+                            </div>
+                            {data.duties.map((duty, id) => {
+                              return <p key={id}>{duty}</p>
+                            })}
                           </div>
                         </div>
                       )
@@ -83,7 +77,33 @@ const ResumePage = () => {
                   </div>
                 </div>
                 <div className={style.rightSide_resume}>
-                  <h2>Personal Info</h2>
+                  <div className={(style.educationWrapper, style.blueBar)}>
+                    {data.node.Education.map((data, id) => {
+                      return (
+                        <div className={style.education_list} key={id}>
+                          <div className={style.list_detail}>
+                            <h4>{data.degree}</h4>
+                            <p>
+                              {data.school}. {data.year}
+                            </p>
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                  <div className={`${style.personalWrapper} ${style.blueBar}`}>
+                    <p>
+                      <em>Phone:</em> {data.node.Personal[0].phone}
+                    </p>
+                    <p>
+                      <em>Email:</em> {data.node.Personal[0].email}
+                    </p>
+                  </div>
+                  <div className={(style.skillsWrapper, style.blueBar)}>
+                    {data.node.skills.map((list, id) => {
+                      return <p key={id}>{list}</p>
+                    })}
+                  </div>
                 </div>
               </div>
             </div>

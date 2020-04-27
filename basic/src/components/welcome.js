@@ -26,8 +26,10 @@ const Welcome = () => {
           <>
             {data.allDataJson.edges.map((data, id) => (
               <div key={1} className={style.home_page}>
-                <div className={style.leftSide}></div>
-                <div className={style.rightSide}>
+                <div className={style.top}>
+                  <div className={style.avatar}></div>
+                </div>
+                <div className={style.bottom}>
                   <h1>{data.node.description[0].welcometext}</h1>
                   <h1>{data.node.description[0].midText}</h1>
                   <p>{data.node.description[0].lowText}</p>

@@ -5,7 +5,7 @@ import style from "./footer.module.scss"
 const Navigation = () => {
   return (
     <div className={style.footer}>
-      <p>Twitter. Linkedin. Github</p>
+      <p>Linkedin. Github</p>
     </div>
   )
 }
