@@ -7,7 +7,9 @@ const Navigation = () => {
     <div className={style.navigation}>
       <div className={style.logo}>
         <h2>
-          <Link to="/">N</Link>
+          <Link to="/">
+            <span>NickIloba</span>
+          </Link>
         </h2>
       </div>
       <nav>
