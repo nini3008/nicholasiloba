@@ -29,6 +29,7 @@ const ResumePage = () => {
                   company
                   city
                 }
+                skillActions
                 Education {
                   degree
                   school
@@ -44,8 +45,14 @@ const ResumePage = () => {
           {data.allDataJson.edges.map((data, id) => (
             <div key={1} className={style.resume_section}>
               <div className={style.name_wrapper}>
-                <span>{data.node.description[0].name}</span>
-                <span>{data.node.description[0].jobTitle}</span>
+                <div>
+                  <span>{data.node.description[0].name}</span>
+                  <span>{data.node.description[0].jobTitle}</span>
+                </div>
+                <div className={style.contact}>
+                  <p>Phone: {data.node.Personal[0].phone}</p>
+                  <p>Email: {data.node.Personal[0].email}</p>
+                </div>
               </div>
               <div className={style.objective}>
                 <p>{data.node.description[0].objective}</p>
@@ -77,7 +84,7 @@ const ResumePage = () => {
                   </div>
                 </div>
                 <div className={style.rightSide_resume}>
-                  <div className={(style.educationWrapper, style.blueBar)}>
+                  <div className={`${style.educationWrapper} ${style.blueBar}`}>
                     {data.node.Education.map((data, id) => {
                       return (
                         <div className={style.education_list} key={id}>
@@ -91,15 +98,23 @@ const ResumePage = () => {
                       )
                     })}
                   </div>
-                  <div className={`${style.personalWrapper} ${style.blueBar}`}>
-                    <p>
-                      <em>Phone:</em> {data.node.Personal[0].phone}
-                    </p>
-                    <p>
-                      <em>Email:</em> {data.node.Personal[0].email}
-                    </p>
+
+                  <div
+                    className={`${style.skillsAction} ${style.skills} ${style.blueBar}`}
+                  >
+                    <h4>Key Skills</h4>
+                    <ul>
+                      {data.node.skillActions.map((list, id) => {
+                        console.log(list)
+                        return <li key={id}>{list}</li>
+                      })}
+                    </ul>
                   </div>
-                  <div className={(style.skillsWrapper, style.blueBar)}>
+
+                  <div
+                    className={`${style.skillsWrapper} ${style.skills} ${style.blueBar}`}
+                  >
+                    <h4>Technical Skills</h4>
                     {data.node.skills.map((list, id) => {
                       return <p key={id}>{list}</p>
                     })}

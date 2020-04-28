@@ -43,20 +43,22 @@ li {
 
 .leftSide_resume {
   width: 70%;
-  margin-right: 4%;
-  padding: 0rem 1rem 1rem;
+  margin-right: 1%;
+  padding: 0rem 2rem 1rem;
 }
 .rightSide_resume {
-  width: 26%;
-  padding: 0 1rem 1rem;
+  width: 29%;
+  padding: 0 2rem 1rem;
 }
 .name_wrapper {
   background: #005b7d;
-  padding: 2rem 1rem 1rem;
+  padding: 2rem 2rem 1rem;
   color: white;
   margin: 0 auto;
   width: 100%;
   font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
 }
 .objective {
   p {
@@ -129,4 +131,24 @@ li {
 .blueBar {
   border-top: 5px solid #005b7cb3;
   padding-top: 40px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+}
+
+.skills {
+  h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  li {
+    margin-bottom: 20px;
+  }
 }

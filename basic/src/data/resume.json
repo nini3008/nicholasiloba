@@ -32,7 +32,7 @@
       "city": "Houston, TX",
       "year": "Apr, 2015 - Jul, 2017",
       "duties": [
-        "Collaborated with cross-functional teams (Sales, Designers & Project Managers) to build fully functional responsive websites.Liaised with Project Management team to create accurate budget for new projects and manage scope creep on existing projects.Built over 40 web projects including features such as photo galleries, forms, custom mobile menus, interactive web pages, and interactive google maps.Tested front-end code in multiple browsers to ensure cross-browser compatibility.Performed website deployments from staging environment to production"
+        "Collaborated with cross-functional teams (Sales, Designers & Project Managers) to build fully functional responsive websites.Liaised with Project Management team to create accurate budget for new projects and manage scope creep on existing projects.Built over 40 web projects including features such as photo galleries, forms, custom mobile menus, interactive web pages, and interactive google maps. Tested front-end code in multiple browsers to ensure cross-browser compatibility. Performed website deployments from staging environment to production"
       ]
     },
     {
@@ -60,21 +60,17 @@
   "Personal": [
     {
       "Address": "28 iriving street, Cambridge, MA, 02138",
-      "phone": "202-251-7566",
+      "phone": "202.251.7566",
       "email": "nicholas.iloba@gmail.com",
       "linkedin": "//www.linkedin.com/in/nicholas-iloba-38241652/"
     }
   ],
   "skillActions": [
-    {
-      "items": [
-        "Implement websites, landing pages, and applications from concept through deployment, with a responsive, mobile-first approach",
-        "Maintaining, optimizing, troubleshooting, and improving websites",
-        "Work closely with other team members on the development team"
-      ]
-    }
+    "Execute websites, landing pages, and applications from concept through deployment, with a responsive, mobile-first approach",
+    "Maintaining, optimizing, troubleshooting, and improving websites",
+    "Exemplifies the term team player, yet can produce independently"
   ],
   "skills": [
-    "HTML5, CSS3, JavaScript, React, Boostrap, Gatsby, Git, Photoshop, jQuery, Gulp, webpack"
+    "HTML5, CSS3, JavaScript, React, Bootstrap, Gatsby, Git, Photoshop, jQuery, Gulp, Webpack, Drupal, D3, Wordpress"
   ]
 }
