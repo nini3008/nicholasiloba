@@ -8,7 +8,7 @@ const Navigation = () => {
       <div className={style.logo}>
         <h2>
           <Link to="/">
-            <span>NickIloba</span>
+            <span>N.</span>
           </Link>
         </h2>
       </div>
@@ -21,7 +21,7 @@ const Navigation = () => {
           </li>
           <li>
             <Link to="/resume" activeClassName={style.active}>
-              Resume
+              Résumé
             </Link>
           </li>
           <li>

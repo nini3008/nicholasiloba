@@ -1,6 +1,7 @@
 .work_section {
   height: 100vh;
   width: 100%;
+  background: #347762;
 }
 
 .projectWrapper {
@@ -46,7 +47,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: green;
+    background: white;
     z-index: 9;
   }
   span {
@@ -56,7 +57,15 @@
     top: 0;
     color: #000;
     z-index: 10;
+    width: 60px;
     cursor: pointer;
+    text-align: center;
+    /* height: 50px; */
+    line-height: 50px;
+    border: 5px solid #347762;
+    border-radius: 100%;
+    display: block;
+    margin: 2rem;
   }
 }
 
