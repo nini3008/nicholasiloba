@@ -1,4 +1,4 @@
-@import url("//fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
 .navigation {
   display: flex;
   justify-content: space-between;
@@ -7,17 +7,23 @@
   height: 50px;
   width: 100%;
   line-height: 50px;
-  padding: 0 1rem;
+  padding: 0 2rem;
   z-index: 20;
 }
 .logo {
+  position: relative;
+  height: 60px;
+
   a {
     text-decoration: none;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    border: 5px solid #fff;
+    padding: 5px 10px;
+    position: absolute;
   }
   span {
-    font-family: "Rock Salt", cursive;
+    font-family: "Limelight", cursive;
   }
   span:nth-child(2) {
     margin-left: 20px;

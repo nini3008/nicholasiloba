@@ -26,6 +26,11 @@
   width: 300px;
   margin: 0 auto;
   border-radius: 100%;
+  overflow: hidden;
+  img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+  }
 }
 
 .bottom {

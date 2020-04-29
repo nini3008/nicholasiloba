@@ -41,7 +41,7 @@ const ResumePage = () => {
         }
       `}
       render={data => (
-        <>
+        <div className={style.resume_bg}>
           {data.allDataJson.edges.map((data, id) => (
             <div key={1} className={style.resume_section}>
               <div className={style.name_wrapper}>
@@ -123,7 +123,7 @@ const ResumePage = () => {
               </div>
             </div>
           ))}
-        </>
+        </div>
       )}
     />
   )
