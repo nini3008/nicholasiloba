@@ -1,5 +1,6 @@
 {
   "title": "Home Page",
+  "profileImg": "../images/prof.JPG",
   "description": [
     {
       "welcometext": "Hello, I'm Nick,",

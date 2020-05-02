@@ -19,12 +19,11 @@ function ProjectDetails(props) {
               key={uuidv4()}
               onClick={handleClose}
               onKeyDown={props.handleClose}
+              className={style.closeBtn}
               tabIndex="-1"
               data-id={props.data_id_Num}
               role="button"
-            >
-              x
-            </span>
+            ></span>
           </React.Fragment>
         )
       })}

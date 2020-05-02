@@ -5,10 +5,19 @@
   height: 50px;
   width: 100%;
   line-height: 50px;
-  padding: 0 1rem;
+  padding: 0 2rem;
   z-index: 20;
   font-size: 1rem;
   bottom: 0;
   color: white;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.footerRight {
+  span {
+    margin-left: 10px;
+  }
+  a {
+    color: #fff;
+  }
 }
