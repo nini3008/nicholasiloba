@@ -1,7 +1,7 @@
-import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
-import style from "./welcome.module.scss"
-import profile from "../images/prof.jpg"
+import React from "react";
+import { StaticQuery, graphql, Link } from "gatsby";
+import style from "./welcome.module.scss";
+import profile from "../images/prof.jpg";
 
 const Welcome = () => {
   return (
@@ -23,7 +23,7 @@ const Welcome = () => {
             }
           }
         `}
-        render={data => (
+        render={(data) => (
           <>
             {data.allDataJson.edges.map((data, id) => (
               <div key={1} className={style.home_page}>
@@ -44,7 +44,7 @@ const Welcome = () => {
         )}
       />
     </section>
-  )
-}
+  );
+};
 
-export default Welcome
+export default Welcome;
