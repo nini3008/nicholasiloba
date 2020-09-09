@@ -23,7 +23,9 @@ function ProjectDetails(props) {
               tabIndex="-1"
               data-id={props.data_id_Num}
               role="button"
-            ></span>
+            >
+              x
+            </span>
           </React.Fragment>
         );
       })}
