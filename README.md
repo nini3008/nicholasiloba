@@ -1,3 +1,0 @@
-# Nicholas Iloba
-
-Personal Website
