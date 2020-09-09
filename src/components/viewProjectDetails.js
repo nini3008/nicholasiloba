@@ -1,10 +1,10 @@
-import React from "react"
-import style from "./work.module.scss"
-import { v4 as uuidv4 } from "uuid"
+import React from "react";
+import style from "./work.module.scss";
+import { v4 as uuidv4 } from "uuid";
 
-const handleClose = e => {
-  e.target.parentNode.classList.remove(style["active"])
-}
+const handleClose = (e) => {
+  e.target.parentNode.classList.remove(style["active"]);
+};
 
 function ProjectDetails(props) {
   return (
@@ -25,9 +25,9 @@ function ProjectDetails(props) {
               role="button"
             ></span>
           </React.Fragment>
-        )
+        );
       })}
     </React.Fragment>
-  )
+  );
 }
-export default ProjectDetails
+export default ProjectDetails;
