@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+.contact_section {
+  height: 100vh;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #005b7d;
+}
+
+.contact_header {
+  text-align: left;
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  span {
+    display: block;
+    text-transform: uppercase;
+    padding-left: 2rem;
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+    height: 70px;
+    line-height: 70px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 1.4rem;
+    padding-left: 2rem;
+    max-width: 600px;
+    margin-top: 20px;
+  }
+}
+
+.contact_text {
+  color: #fff;
+  text-align: center;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact_info {
+  padding-left: 2rem;
+  display: flex;
+  width: 100%;
+  div {
+    width: 25%;
+    h4,
+    a,
+    p {
+      color: #fff;
+    }
+    a[href] {
+      color: #37b6e4;
+    }
+    h4 {
+      margin: 20px 0 10px;
+      text-transform: uppercase;
+    }
+    ul {
+      display: flex;
+      width: 100%;
+
+      max-width: 40%;
+      li {
+        margin-right: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: #37b6e4;
+      }
+    }
+  }
+}
+
+.resume {
+  .resume_download {
+    border: 2px solid #37b6e4;
+    color: #37b6e4;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px 0 10px;
+    display: inline-block;
+  }
+}

@@ -1,0 +1,161 @@
+.resume_section {
+  height: 100%;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.resume_bg {
+  background-color: #3e3e3e;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+p,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+ul,
+li {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+li {
+  list-style: none;
+}
+
+.resume_wrapper {
+  background: white;
+  height: calc(100% - 300px);
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.experience_list {
+  //display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.leftSide_resume {
+  width: 70%;
+  margin-right: 1%;
+  padding: 0rem 2rem 1rem;
+}
+.rightSide_resume {
+  width: 29%;
+  padding: 0 2rem 1rem;
+}
+.name_wrapper {
+  background: #005b7d;
+  padding: 2rem 2rem 1rem;
+  color: white;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.objective {
+  p {
+    font-size: 1.2rem;
+    padding: 40px;
+    background: #ffffff;
+    text-align: center;
+  }
+}
+.list_year {
+  font-style: italic;
+}
+.list_detail {
+  width: 100%;
+}
+.experienceWrapper {
+  border-top: 5px solid #005b7cb3;
+  padding-top: 40px;
+  h2 {
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+}
+.top_details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.list_company_name {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  h4 {
+    text-transform: uppercase;
+  }
+  p {
+    font-style: italic;
+  }
+}
+
+.list_city_name {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: right;
+  p {
+    font-style: italic;
+  }
+}
+
+.educationWrapper {
+  h2 {
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+}
+
+.education_list {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.personalWrapper {
+  padding-bottom: 40px;
+}
+
+.blueBar {
+  border-top: 5px solid #005b7cb3;
+  padding-top: 40px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 1rem;
+    margin: 0 5px;
+  }
+}
+
+.skills {
+  h4 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  li {
+    margin-bottom: 20px;
+  }
+}
