@@ -11,6 +11,13 @@ const Welcome = () => {
             allDataJson(filter: { title: { eq: "Home Page" } }) {
               edges {
                 node {
+                  profileImg {
+                    childImageSharp {
+                      fixed {
+                        src
+                      }
+                    }
+                  }
                   description {
                     midText
                     welcometext
@@ -27,7 +34,12 @@ const Welcome = () => {
             {data.allDataJson.edges.map((data, id) => (
               <div key={1} className={style.home_page}>
                 <div className={style.top}>
-                  <div className={style.avatar}></div>
+                  <div className={style.avatar}>
+                    <img
+                      src={data.node.profileImg.childImageSharp.fixed.src}
+                      alt="profile"
+                    />
+                  </div>
                 </div>
                 <div className={style.bottom}>
                   <h1>{data.node.description[0].welcometext}</h1>
