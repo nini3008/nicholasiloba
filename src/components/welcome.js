@@ -1,7 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
 import style from "./welcome.module.scss";
-import profile from "../images/prof.jpg";
 
 const Welcome = () => {
   return (
@@ -28,9 +27,7 @@ const Welcome = () => {
             {data.allDataJson.edges.map((data, id) => (
               <div key={1} className={style.home_page}>
                 <div className={style.top}>
-                  <div className={style.avatar}>
-                    <img src={profile} alt="profile" />
-                  </div>
+                  <div className={style.avatar}></div>
                 </div>
                 <div className={style.bottom}>
                   <h1>{data.node.description[0].welcometext}</h1>
