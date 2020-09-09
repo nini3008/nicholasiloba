@@ -11,15 +11,14 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "postinstall": "patch-package"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
     "@material-ui/core": "^4.9.9",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.3.2",
     "gatsby-plugin-sass": "^2.2.0",
-    "gatsby-plugin-sharp": "^2.5.4",
+    "gatsby-plugin-sharp": "^2.6.26",
     "gatsby-plugin-typography": "^2.4.0",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-json": "^2.3.1",
