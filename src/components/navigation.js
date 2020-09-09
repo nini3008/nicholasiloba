@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import style from "./navigation.module.scss"
+import React from "react";
+import { Link } from "gatsby";
+import style from "./navigation.module.scss";
 
 const Navigation = () => {
   return (
@@ -14,11 +14,11 @@ const Navigation = () => {
       </div>
       <nav>
         <ul className={style.links}>
-          <li>
+          {/* <li>
             <Link to="/work" activeClassName={style.active}>
               Work
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link to="/resume" activeClassName={style.active}>
               Résumé
@@ -32,7 +32,7 @@ const Navigation = () => {
         </ul>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

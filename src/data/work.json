@@ -50,24 +50,9 @@
         }
       ]
     },
+
     {
       "id": "3",
-      "projectName": "Angry whooper",
-      "ProjectIMG": [
-        {
-          "img": "../images/todaysmilitary.png"
-        }
-      ],
-      "projectPopButton": "view more",
-      "ProjectDetails": "contact me",
-      "openDetails": [
-        {
-          "name": "Angry whooper"
-        }
-      ]
-    },
-    {
-      "id": "4",
       "projectName": "Museum of Incomplete",
       "ProjectIMG": [
         {
@@ -83,7 +68,7 @@
       ]
     },
     {
-      "id": "5",
+      "id": "4",
       "projectName": "Mullenlowe US",
       "ProjectIMG": [
         {
@@ -95,38 +80,6 @@
       "openDetails": [
         {
           "name": "Mullenlowe US"
-        }
-      ]
-    },
-    {
-      "id": "6",
-      "projectName": "CSS Grid",
-      "ProjectIMG": [
-        {
-          "img": "../images/todaysmilitary.png"
-        }
-      ],
-      "projectPopButton": "view more",
-      "ProjectDetails": "contact me",
-      "openDetails": [
-        {
-          "name": "CSS Grid"
-        }
-      ]
-    },
-    {
-      "id": "7",
-      "projectName": "Movie Wars",
-      "ProjectIMG": [
-        {
-          "img": "../images/todaysmilitary.png"
-        }
-      ],
-      "projectPopButton": "view more",
-      "ProjectDetails": "contact me",
-      "openDetails": [
-        {
-          "name": "Movie Wars"
         }
       ]
     }
