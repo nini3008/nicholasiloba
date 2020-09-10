@@ -1,19 +1,46 @@
 .resume_section {
   height: 100%;
   vertical-align: middle;
-  display: flex;
+  display: none;
   justify-content: center;
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 0;
+  @media screen and (min-width: 600px) {
+    display: flex;
+  }
 }
-
-.resume_bg {
+.resume__wrapper {
   background-color: #3e3e3e;
-  display: block;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width: 600px) {
+    height: auto;
+    display: block;
+  }
+}
+.mobile_resume_text {
+  p {
+    color: #fff;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  @media screen and (min-width: 600px) {
+    display: none;
+  }
+}
+.resume_bg {
+  display: flex;
   width: 100%;
-  height: 100%;
+  height: 50vh;
+  align-items: flex-end;
+  @media screen and (min-width: 600px) {
+    display: block;
+    height: 100%;
+  }
 }
 
 h1,
