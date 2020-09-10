@@ -90,6 +90,9 @@
 
   h2 {
     margin-bottom: 5%;
+    @media screen and (min-width: 600px) {
+      margin-bottom: 0;
+    }
   }
   a {
     background: #005b7d;
