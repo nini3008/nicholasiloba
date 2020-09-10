@@ -129,8 +129,7 @@ const ResumePage = () => {
             ))}
             <div className={style.mobile_resume_text}>
               <p>
-                Viewport too small, please view resume on a larger window size
-                below.
+                Viewport too small, please view resume on a larger window size.
               </p>
             </div>
           </div>
