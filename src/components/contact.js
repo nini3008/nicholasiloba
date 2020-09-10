@@ -50,7 +50,7 @@ const ContactPage = () => {
               rel="noopener noreferrer"
               aria-label="Download Resumé"
             >
-              Résumé.PDF
+              Resume.PDF
             </a>
           </div>
         </div>
