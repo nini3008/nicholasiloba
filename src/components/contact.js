@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./contact.module.scss";
-import resume from "../images/resume/resume.pdf";
+import resumePdf from "../images/resume/resume.pdf";
+import resumeWord from "../images/resume/resume.pdf";
 import Footer from "./footer.js";
 
 const ContactPage = () => {
@@ -33,25 +34,34 @@ const ContactPage = () => {
             <h4>Social</h4>
             <ul>
               <li>
-                <a href="/">Linkedin</a>
+                <a href="//www.linkedin.com/in/nicholas-iloba-38241652/" rel="noopener noreferrer" target="_blank">Linkedin</a>
               </li>
-              <li>
-                <a href="/">Twitter</a>
-              </li>
+
             </ul>
           </div>
 
           <div className={style.resume}>
             <h4>Resume</h4>
+            <div className={style.links}>
             <a
-              href={resume}
+              href={resumePdf}
               className={style.resume_download}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Download Resumé"
             >
-              Resume.PDF
+              PDF
             </a>
+            <a
+              href={resumeWord}
+              className={style.resume_download}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Resumé"
+            >
+              Word
+            </a>
+            </div>
           </div>
         </div>
       </section>

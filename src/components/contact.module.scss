@@ -114,6 +114,7 @@
 }
 
 .resume {
+  width: 50%;
   .resume_download {
     border: 2px solid #37b6e4;
     color: #37b6e4;
@@ -122,5 +123,10 @@
     text-transform: uppercase;
     margin: 10px 0 10px;
     display: inline-block;
+  }
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
   }
 }
